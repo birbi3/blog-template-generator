@@ -10,7 +10,7 @@ def main():
 		blog.write("#### [Home](../index.md)\n")
 		blog.write("### All opinions shared here are mine and mine alone\n")
 	with open("my-posts.md", "a") as my_posts:
-		my_posts.write("\n- [" + today + "] (posts/" + today + ".md)")
+		my_posts.write("\n- [" + today + "](posts/" + today + ".md)")
 	os.system("mv " + today + ".md posts/")
 
 if __name__ == "__main__":
